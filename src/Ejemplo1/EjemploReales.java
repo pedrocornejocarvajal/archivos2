@@ -1,3 +1,9 @@
+//Crear, con un editor, un archivo de texto de números reales,
+//uno por línea. Abrirlo con un flujo de texto para lectura y leerlo línea a
+//línea. Convertir las cadenas leídas en número de tipo double por medio
+//de Scanner, y mostrar al final la suma de todos ellos.
+
+
 package Ejemplo1;
 
 import java.io.BufferedReader;
@@ -7,11 +13,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class EjemploReales {
-    //Crear, con un editor, un archivo de texto de números reales,
-    //uno por línea. Abrirlo con un flujo de texto para lectura y leerlo línea a
-    //línea. Convertir las cadenas leídas en número de tipo double por medio
-    //de Scanner, y mostrar al final la suma de todos ellos.
-
 
     static final String FILE_NAME = "Ejemplo1.txt";
 

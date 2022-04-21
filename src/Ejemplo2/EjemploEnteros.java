@@ -1,3 +1,14 @@
+//Crear, con un editor, un archivo de texto de números enteros
+//con la siguiente información (dos registros con secuencias de números
+//enteros separados por espacios y tabuladores):
+//3 45 6 77 89
+//123 45 67 777
+//Abrirlo con un flujo de texto para lectura y leerlo línea a línea y datos a
+//dato. Devolver la suma de todos los números y la cantidad de números
+//leídos.
+
+
+
 package Ejemplo2;
 
 import java.io.BufferedReader;
@@ -7,15 +18,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class EjemploEnteros {
-    //Crear, con un editor, un archivo de texto de números enteros
-    //con la siguiente información (dos registros con secuencias de números
-    //enteros separados por espacios y tabuladores):
-    //3 45 6 77 89
-    //123 45 67 777
-    //Abrirlo con un flujo de texto para lectura y leerlo línea a línea y datos a
-    //dato. Devolver la suma de todos los números y la cantidad de números
-    //leídos.
-
 
     static final String FILE_NAME="Ejemplo2.txt";
     public static void proceso() {
