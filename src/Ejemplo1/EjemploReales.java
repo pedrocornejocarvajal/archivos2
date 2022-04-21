@@ -37,7 +37,7 @@ public class EjemploReales {
 
             //Cuidado si se usa este escaner a posteriori con string(hay que vaciar el escaner)
 
-            //"cactcheamos" todos los errores posibles a la hora de leer el archivo
+            //"cacheamos" todos los errores posibles a la hora de leer el archivo
         } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("no se encuentra el fichero " + FILE_NAME);
         } catch (IOException ioEx) {

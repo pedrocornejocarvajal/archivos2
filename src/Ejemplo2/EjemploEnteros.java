@@ -8,7 +8,6 @@
 //leídos.
 
 
-
 package Ejemplo2;
 
 import java.io.BufferedReader;
@@ -19,7 +18,8 @@ import java.util.Scanner;
 
 public class EjemploEnteros {
 
-    static final String FILE_NAME="Ejemplo2.txt";
+    static final String FILE_NAME = "Ejemplo2.txt";
+
     public static void proceso() {
 
         BufferedReader input = null;
@@ -29,16 +29,16 @@ public class EjemploEnteros {
         int contador = 0;
 
 
-        try{ //se abre el fichero
-            input=new BufferedReader(new FileReader(FILE_NAME));
-            dato=input.readLine();
-            while (dato!=null){
-                scanner=new Scanner(dato);
-                while (scanner.hasNextInt()){
-                    sumatorio+=scanner.nextInt();
+        try { //se abre el fichero
+            input = new BufferedReader(new FileReader(FILE_NAME));
+            dato = input.readLine();
+            while (dato != null) {
+                scanner = new Scanner(dato);
+                while (scanner.hasNextInt()) {
+                    sumatorio += scanner.nextInt();
                     contador++;
                 }
-                dato=input.readLine();
+                dato = input.readLine();
             }
 
         }
@@ -47,16 +47,16 @@ public class EjemploEnteros {
 
         //Cuidado si se usa este escaner a posteriori con string(hay que vaciar el escaner)
 
-        //"cactcheamos" todos los errores posibles a la hora de leer el archivo
+        //"cacheamos" todos los errores posibles a la hora de leer el archivo
 
-     catch (FileNotFoundException fileNotFoundException) {
-        System.out.println("no se encuentra el fichero " + FILE_NAME);
-    } catch (IOException ioEx) {
-        System.out.println("error de lectura en el fichero " + FILE_NAME);
-    } catch (NumberFormatException numberFormatException) {
-        System.out.println("los datos del fichero no son números reales");
-    } catch (Exception Ex) {
-        System.out.println("error 404");
+        catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("no se encuentra el fichero " + FILE_NAME);
+        } catch (IOException ioEx) {
+            System.out.println("error de lectura en el fichero " + FILE_NAME);
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("los datos del fichero no son números reales");
+        } catch (Exception Ex) {
+            System.out.println("error 404");
         } finally {
             try {
                 if (input != null) {//el fichero de entrada no está cerrado
